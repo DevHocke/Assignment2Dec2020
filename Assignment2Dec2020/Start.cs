@@ -30,24 +30,28 @@ namespace Assignment2Dec2020
                     {
                         case 1:
                             ReadList.ListMembers(myMembers);
-                            Thread.Sleep(2500);
+                            Thread.Sleep(2100);
                             Console.Clear();
                             break;
                         case 2:
                             ReadList.ListMembersDetails(myMembers);
+                            Console.Clear();
                             break;
                         case 3:
                             ReadList.RemoveMember(myMembers);
+                            ReadList.ListMembers(myMembers);
+                            Thread.Sleep(2100);
+                            Console.Clear();
                             break;
                         case 4:
                             Console.Clear();
                             Console.WriteLine("Program exits welcome back.");
-                            Thread.Sleep(2500);
+                            Thread.Sleep(2300);
                             Environment.Exit(0);
                             break;
                         default:
                             Console.WriteLine("Invalid input, please try again");
-                            Thread.Sleep(2000);
+                            Thread.Sleep(1800);
                             Console.Clear();
                             break;
                     }  

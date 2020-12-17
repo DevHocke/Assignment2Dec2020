@@ -61,7 +61,7 @@ namespace Assignment2Dec2020
         // This method runs if the user 
         public void DetailedMember()
         {
-            Console.WriteLine("**************************************************************************************************");
+            Console.WriteLine("****************************************************************************************************");
             Console.WriteLine($"Name: {name}");
             Console.WriteLine($"Age: {age}");
             Console.WriteLine($"Height: {height}");
@@ -72,7 +72,7 @@ namespace Assignment2Dec2020
             Console.WriteLine($"Favourite Music: {favouriteMusic}");
             Console.WriteLine($"Children: {children}");
             Console.WriteLine($"Motivation to code: {driveToCode}");
-            Console.WriteLine("**************************************************************************************************");
+            Console.WriteLine("****************************************************************************************************");
             Console.WriteLine("");
             Console.WriteLine("Press any key to continue...");
             Console.ReadLine();

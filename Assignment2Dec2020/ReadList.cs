@@ -27,10 +27,10 @@ namespace Assignment2Dec2020
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("Which one do you want to know more about? ");
             string checkIfNumb = Console.ReadLine();
-
+            Console.Clear();
             if (int.TryParse(checkIfNumb, out answer))
             {
-                Console.Clear();
+                
                 for (int i = 0; i < myMembers.Count; i++)
                 {
                     if (answer == i)
@@ -53,11 +53,10 @@ namespace Assignment2Dec2020
             
             Console.WriteLine($"What member do you want to remove?");
             string checkIfNumb = Console.ReadLine();
-            
+            Console.Clear();
             if (int.TryParse(checkIfNumb, out answer))
             {
                 myMembers.RemoveAt(answer - 1);
-                Console.Clear();
             }
             else
             {
