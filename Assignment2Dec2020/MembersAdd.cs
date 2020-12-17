@@ -29,7 +29,7 @@ namespace Assignment2Dec2020
                 "Coca Cola",
                 "Foo Fighters",
                 2,
-                "Att kunna skapa något från grunden och lösa problem med det jag skapat. Att sedan kunna använda detta till att tjäna hutlösa summor pengar är ju i sig ytterligare en morot."));
+                "Att kunna skapa något från grunden och lösa problem med det jag skapat. \nAtt sedan kunna använda detta till att tjäna hutlösa summor pengar är ju i sig ytterligare en morot."));
 
             myMembers.Add(new Members("Håkan Eriksson",
                 44,
@@ -51,7 +51,7 @@ namespace Assignment2Dec2020
                 "Whisky",
                 "Falling in Reverse och Self Deception",
                 0,
-                "Drivet kommer från att man får vara kreativ och en problemlösare på samma gång. Sen så drivs man såklart av att få testa på en annan karriär än den man har haft tidigare."));
+                "Drivet kommer från att man får vara kreativ och en problemlösare på samma gång.\nSen så drivs man såklart av att få testa på en annan karriär än den man har haft tidigare."));
 
             myMembers.Add(new Members("Tina Eriksson",
                 30,
@@ -68,10 +68,10 @@ namespace Assignment2Dec2020
                 28,
                 192,
                 "Östersund, Odensala",
-                "musik, socialisera, film,serier, automation och skriptning, programmering, testa nytt, äta ute, whiskykväll och öl",
+                "musik, socialisera, film, serier, automation och skriptning, programmering, testa nytt, äta ute och whiskykväll",
                 "Entrecote med rotfrukter och vitlökssmör",
                 "Trocadero Zero, Ardbeg och Budvar",
-                "Armin Van Buuren (annars progressive trance, house, trance, electronic, progressive house, rock, metal, heavy metal)",
+                "Armin Van Buuren (annars progressive trance, house, electronic, progressive house, rock, metal, heavy metal)",
                 0,
                 "Möjlighet till karriärutveckling."));
 

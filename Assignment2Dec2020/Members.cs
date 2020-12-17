@@ -61,9 +61,22 @@ namespace Assignment2Dec2020
         // This method runs if the user 
         public void DetailedMember()
         {
-            Console.WriteLine($"{name} is {age} years old and {height} cm´s tall.");
-            Console.WriteLine($"{name} lives in {fromCity} and likes to {hobbies},\n favourite food is {favouriteFood} and also likes to drink {favouriteDrink} while listening to {favouriteMusic}");
-            Console.WriteLine($"{name} has {children} children and started this YH education to {driveToCode}");
+            Console.WriteLine("**************************************************************************************************");
+            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Age: {age}");
+            Console.WriteLine($"Height: {height}");
+            Console.WriteLine($"City: {fromCity}");
+            Console.WriteLine($"Hobbies: {hobbies}");
+            Console.WriteLine($"Favourite Food: {favouriteFood}");
+            Console.WriteLine($"Favourite Drink: {favouriteDrink}");
+            Console.WriteLine($"Favourite Music: {favouriteMusic}");
+            Console.WriteLine($"Children: {children}");
+            Console.WriteLine($"Motivation to code: {driveToCode}");
+            Console.WriteLine("**************************************************************************************************");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadLine();
+            Console.Clear();
 
         }
     }

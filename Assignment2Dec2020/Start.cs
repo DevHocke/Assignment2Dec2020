@@ -21,33 +21,41 @@ namespace Assignment2Dec2020
                 Console.WriteLine("2. List details about a member");
                 Console.WriteLine("3. Remove a member");
                 Console.WriteLine("4. Quit");
-                int menu = Convert.ToInt32(Console.ReadLine());
-
-                switch (menu)
+                string answer = Console.ReadLine();
+                int menu;
+                
+                if (int.TryParse(answer, out menu))
                 {
-                    case 1:
-                        ReadList.ListMembers(myMembers);
-                        break;
-                    case 2:
-                        ReadList.ListMembersDetails(myMembers);
-                        break;
-                    case 3:
-                        ReadList.RemoveMember(myMembers);
-                        break;
-                    case 4:
-                        Console.Clear();
-                        Console.WriteLine("Program exits welcome back.");
-                        Thread.Sleep(2500);
-                        Environment.Exit(0);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input, please try again");
-                        Thread.Sleep(2000);
-                        Console.Clear();
-                        break;
+                    switch (menu)
+                    {
+                        case 1:
+                            ReadList.ListMembers(myMembers);
+                            Thread.Sleep(2500);
+                            Console.Clear();
+                            break;
+                        case 2:
+                            ReadList.ListMembersDetails(myMembers);
+                            break;
+                        case 3:
+                            ReadList.RemoveMember(myMembers);
+                            break;
+                        case 4:
+                            Console.Clear();
+                            Console.WriteLine("Program exits welcome back.");
+                            Thread.Sleep(2500);
+                            Environment.Exit(0);
+                            break;
+                        default:
+                            Console.WriteLine("Invalid input, please try again");
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                            break;
+                    }  
                 }
-                Console.ReadLine();
-                Console.Clear();
+                else
+                {
+                    Console.WriteLine("Invalid input, please use a single digit number.");
+                }
             } while (true);
         }
     }

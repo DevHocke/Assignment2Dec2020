@@ -27,7 +27,7 @@ namespace Assignment2Dec2020
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("Which one do you want to know more about? ");
             answer = Convert.ToInt32(Console.ReadLine());
-
+            Console.Clear();
             for (int i = 0; i < myMembers.Count; i++)
             {
                 if (answer == i)
@@ -40,13 +40,8 @@ namespace Assignment2Dec2020
         // This Method asks the user what member to remove from the members list before it returns back to the main menu.
         public static void RemoveMember(List<Members> myMembers)
         {
-            int index = 1;
-            Console.WriteLine("These are the members from Norrlänningarna: ");
-            foreach (var item in myMembers)
-            {
-                Console.WriteLine($"{index} {item.name}, ");
-                index++;
-            }
+            ListMembers(myMembers);
+
             Console.WriteLine($"What member do you want to remove?");
             int answer = Convert.ToInt32(Console.ReadLine());
             myMembers.RemoveAt(answer - 1);
