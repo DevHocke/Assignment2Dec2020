@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
-namespace Inlämning2_trial1
+namespace Assignment2Dec2020
 {
     class Start
     {

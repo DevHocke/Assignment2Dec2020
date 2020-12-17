@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Inlämning2_trial1
+
+namespace Assignment2Dec2020
 {
     class Members
     {
