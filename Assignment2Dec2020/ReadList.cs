@@ -26,26 +26,43 @@ namespace Assignment2Dec2020
 
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("Which one do you want to know more about? ");
-            answer = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
-            for (int i = 0; i < myMembers.Count; i++)
+            string checkIfNumb = Console.ReadLine();
+
+            if (int.TryParse(checkIfNumb, out answer))
             {
-                if (answer == i)
+                Console.Clear();
+                for (int i = 0; i < myMembers.Count; i++)
                 {
-                    myMembers[i - 1].DetailedMember();
+                    if (answer == i)
+                    {
+                        myMembers[i - 1].DetailedMember();
+                    }
                 }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please use a single digit number.");
             }
         }
 
         // This Method asks the user what member to remove from the members list before it returns back to the main menu.
         public static void RemoveMember(List<Members> myMembers)
         {
+            int answer;
             ListMembers(myMembers);
-
+            
             Console.WriteLine($"What member do you want to remove?");
-            int answer = Convert.ToInt32(Console.ReadLine());
-            myMembers.RemoveAt(answer - 1);
-            Console.Clear();
+            string checkIfNumb = Console.ReadLine();
+            
+            if (int.TryParse(checkIfNumb, out answer))
+            {
+                myMembers.RemoveAt(answer - 1);
+                Console.Clear();
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please use a single digit number.");
+            }
         }
     }
 }
